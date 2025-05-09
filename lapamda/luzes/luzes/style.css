@@ -1,0 +1,28 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-image: url('desligada2.jpg'); 
+    background-size: 100% 190%;
+    margin: 0;
+    padding: 20px;
+    transition: background-image 0.5s ease-in-out; 
+}
+
+body.luz-ligada {
+    background-image: url('ligada2.jpg'); 
+    background-size: 100% 200%;
+    align-items: center;
+}
+
+img {
+    width: 150px;
+    height: auto;
+    transition: opacity 0.5s ease-in-out;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}

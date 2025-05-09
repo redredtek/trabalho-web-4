@@ -1,0 +1,25 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: blue;
+}
+.area{
+ text-align: center;
+ background-color: white;
+ padding: 40px;
+}
+#display{
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+button{
+    padding: 10px, 20px;
+    font-size: 16px;
+    margin: 5px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
