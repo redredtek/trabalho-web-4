@@ -1,0 +1,70 @@
+body {
+  background: #000;
+  color: white;
+  text-align: center;
+  font-family: sans-serif;
+  padding: 40px;
+}
+
+.teclado {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.tecla {
+  padding: 20px;
+  background: #222;
+  color: #0ff;
+  border: 2px solid #0ff;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.1s;
+}
+
+.tecla:active,
+.tecla.pressionada {
+  background: #0ff;
+  color: #000;
+  transform: scale(0.95);
+}
+#toggleTheme {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #444;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 999;
+  transition: background 0.3s;
+}
+
+#toggleTheme:hover {
+  background: #666;
+}
+
+body.light-mode {
+  background: #fff;
+  color: #000;
+}
+
+body.light-mode .tecla {
+  background: #eee;
+  border-color: #0077cc;
+  color: #0077cc;
+}
+
+body.light-mode .tecla.pressionada {
+  background: #0077cc;
+  color: white;
+}
+
+body.light-mode #toggleTheme {
+  background: #ccc;
+  color: #000;
+}
